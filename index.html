@@ -366,46 +366,50 @@
             </div>
         </div>
 
-        <div id="sidebar" class="sidebar flex flex-col p-4 gap-4">
+        <div id="sidebar" class="sidebar flex flex-col p-4 gap-4 overflow-y-auto" style="touch-action: pan-y;">
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 mt-2">Power &amp; Input</div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('VCC')"><span class="font-bold text-red-400 text-lg">VCC</span><span
-                        class="text-xs">High</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('VCC')"><span
+                        class="font-bold text-red-400 text-lg">VCC</span><span class="text-xs">High</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('GND')"><svg class="svg-inline--fa fa-arrow-down text-gray-400 text-xl"
-                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('GND')"><svg
+                        class="svg-inline--fa fa-arrow-down text-gray-400 text-xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512" data-fa-i2svg="">
                         <path fill="currentColor"
                             d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
                         </path>
                     </svg><span class="text-xs">GND</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('SWITCH')"><svg class="svg-inline--fa fa-toggle-on text-green-400 text-xl"
-                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toggle-on" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('SWITCH')"><svg
+                        class="svg-inline--fa fa-toggle-on text-green-400 text-xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="toggle-on" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512" data-fa-i2svg="">
                         <path fill="currentColor"
                             d="M192 64C86 64 0 150 0 256S86 448 192 448H384c106 0 192-86 192-192s-86-192-192-192H192zm192 96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z">
                         </path>
                     </svg><span class="text-xs">Switch</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('BUTTON')"><svg class="svg-inline--fa fa-bullseye text-red-400 text-xl"
-                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bullseye" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('BUTTON')"><svg
+                        class="svg-inline--fa fa-bullseye text-red-400 text-xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="bullseye" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" data-fa-i2svg="">
                         <path fill="currentColor"
                             d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
                         </path>
                     </svg><span class="text-xs">Button</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2 "
-                    onclick="sim.addComponent('CLOCK')"><svg class="svg-inline--fa fa-clock text-yellow-400 text-xl"
-                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('CLOCK')"><svg
+                        class="svg-inline--fa fa-clock text-yellow-400 text-xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" data-fa-i2svg="">
                         <path fill="currentColor"
                             d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z">
                         </path>
                     </svg><span class="text-xs">Clock</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('DIP_SWITCH')"><svg
+                    style="touch-action: pan-y;" onclick="sim.addComponent('DIP_SWITCH')"><svg
                         class="svg-inline--fa fa-toggle-off text-blue-400 text-xl" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="toggle-off" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512" data-fa-i2svg="">
@@ -419,7 +423,7 @@
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 mt-2">Combinational</div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('MULTIPLEXER')"><svg
+                    style="touch-action: pan-y;" onclick="sim.addComponent('MULTIPLEXER')"><svg
                         class="svg-inline--fa fa-shuffle text-purple-400 text-xl" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="shuffle" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512" data-fa-i2svg="">
@@ -428,7 +432,7 @@
                         </path>
                     </svg><span class="text-xs">Mux</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('DEMULTIPLEXER')"><svg
+                    style="touch-action: pan-y;" onclick="sim.addComponent('DEMULTIPLEXER')"><svg
                         class="svg-inline--fa fa-code-branch text-purple-400 text-xl" aria-hidden="true"
                         focusable="false" data-prefix="fas" data-icon="code-branch" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
@@ -437,7 +441,7 @@
                         </path>
                     </svg><span class="text-xs">Demux</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('DECODER')"><svg
+                    style="touch-action: pan-y;" onclick="sim.addComponent('DECODER')"><svg
                         class="svg-inline--fa fa-diagram-project text-purple-400 text-xl" aria-hidden="true"
                         focusable="false" data-prefix="fas" data-icon="diagram-project" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
@@ -451,120 +455,149 @@
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 mt-2">Arithmetic Circuits</div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('HALF_ADDER')"><span class="font-bold text-xs">H-Add</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('HALF_ADDER')"><span
+                        class="font-bold text-xs">H-Add</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('FULL_ADDER')"><span class="font-bold text-xs">F-Add</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('FULL_ADDER')"><span
+                        class="font-bold text-xs">F-Add</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('HALF_SUB')"><span class="font-bold text-xs">H-Sub</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('HALF_SUB')"><span
+                        class="font-bold text-xs">H-Sub</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('FULL_SUB')"><span class="font-bold text-xs">F-Sub</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('FULL_SUB')"><span
+                        class="font-bold text-xs">F-Sub</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('ADDER_4BIT')"><span class="font-bold text-xs">4b Add</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('ADDER_4BIT')"><span
+                        class="font-bold text-xs">4b
+                        Add</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('ADDER_8BIT')"><span class="font-bold text-xs">8b Add</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('ADDER_8BIT')"><span
+                        class="font-bold text-xs">8b
+                        Add</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('SUB_4BIT')"><span class="font-bold text-xs">4b Sub</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('SUB_4BIT')"><span
+                        class="font-bold text-xs">4b
+                        Sub</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('SUB_8BIT')"><span class="font-bold text-xs">8b Sub</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('SUB_8BIT')"><span
+                        class="font-bold text-xs">8b
+                        Sub</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('MUL_2BIT')"><span class="font-bold text-xs">2b Mul</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('MUL_2BIT')"><span
+                        class="font-bold text-xs">2b
+                        Mul</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('MUL_4BIT')"><span class="font-bold text-xs">4b Mul</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('MUL_4BIT')"><span
+                        class="font-bold text-xs">4b
+                        Mul</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('DIV_4BIT')"><span class="font-bold text-xs">4-Bit Div</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('DIV_4BIT')"><span
+                        class="font-bold text-xs">4-Bit
+                        Div</span></div>
             </div>
 
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 mt-2">Integrated Circuits (74xx)
             </div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7408')"><span class="font-mono font-bold text-sm">7408</span><span
-                        class="text-xs text-gray-400">AND</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7408')"><span
+                        class="font-mono font-bold text-sm">7408</span><span class="text-xs text-gray-400">AND</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7432')"><span class="font-mono font-bold text-sm">7432</span><span
-                        class="text-xs text-gray-400">OR</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7432')"><span
+                        class="font-mono font-bold text-sm">7432</span><span class="text-xs text-gray-400">OR</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7404')"><span class="font-mono font-bold text-sm">7404</span><span
-                        class="text-xs text-gray-400">NOT</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7404')"><span
+                        class="font-mono font-bold text-sm">7404</span><span class="text-xs text-gray-400">NOT</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7400')"><span class="font-mono font-bold text-sm">7400</span><span
-                        class="text-xs text-gray-400">NAND</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7400')"><span
+                        class="font-mono font-bold text-sm">7400</span><span class="text-xs text-gray-400">NAND</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7402')"><span class="font-mono font-bold text-sm">7402</span><span
-                        class="text-xs text-gray-400">NOR</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7402')"><span
+                        class="font-mono font-bold text-sm">7402</span><span class="text-xs text-gray-400">NOR</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7486')"><span class="font-mono font-bold text-sm">7486</span><span
-                        class="text-xs text-gray-400">XOR</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7486')"><span
+                        class="font-mono font-bold text-sm">7486</span><span class="text-xs text-gray-400">XOR</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('7483')"><span class="font-mono font-bold text-sm">7483</span><span
-                        class="text-xs text-gray-400">4b Add</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('7483')"><span
+                        class="font-mono font-bold text-sm">7483</span><span class="text-xs text-gray-400">4b Add</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('74150')"><span class="font-mono font-bold text-sm">74150</span><span
-                        class="text-xs text-gray-400">16: MUX</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('74150')"><span
+                        class="font-mono font-bold text-sm">74150</span><span class="text-xs text-gray-400">16:
+                        MUX</span>
+                </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('74151')"><span class="font-mono font-bold text-sm">74151</span><span
-                        class="text-xs text-gray-400">8:1 MUX</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('74151')"><span
+                        class="font-mono font-bold text-sm">74151</span><span class="text-xs text-gray-400">8:1
+                        MUX</span>
+                </div>
             </div>
 
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 mt-2">Basic Gates</div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('AND')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('AND')">
                     <svg width="30" height="20" viewBox="0 0 30 20" stroke="white" fill="none" stroke-width="2">
                         <path d="M5,1 L15,1 C22,1 25,10 15,19 L5,19 Z"></path>
                     </svg><span class="text-xs">AND</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('OR')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('OR')">
                     <svg width="30" height="20" viewBox="0 0 30 20" stroke="white" fill="none" stroke-width="2">
                         <path d="M5,1 C5,1 10,1 15,1 C25,1 28,10 15,19 C10,19 5,19 5,19 C8,10 8,10 5,1 Z"></path>
                     </svg><span class="text-xs">OR</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('NOT')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('NOT')">
                     <svg width="30" height="20" viewBox="0 0 30 20" stroke="white" fill="none" stroke-width="2">
                         <path d="M5,1 L20,10 L5,19 Z"></path>
                         <circle cx="23" cy="10" r="2"></circle>
                     </svg><span class="text-xs">NOT</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('NAND')"><span class="font-bold text-lg">NAND</span><span
-                        class="text-xs text-gray-400">Gate</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('NAND')"><span
+                        class="font-bold text-lg">NAND</span><span class="text-xs text-gray-400">Gate</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('NOR')"><span class="font-bold text-lg">NOR</span><span
-                        class="text-xs text-gray-400">Gate</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('NOR')"><span
+                        class="font-bold text-lg">NOR</span><span class="text-xs text-gray-400">Gate</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('XOR')"><span class="font-bold text-lg">XOR</span><span
-                        class="text-xs text-gray-400">Gate</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('XOR')"><span
+                        class="font-bold text-lg">XOR</span><span class="text-xs text-gray-400">Gate</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('XNOR')"><span class="font-bold text-lg">XNOR</span><span
-                        class="text-xs text-gray-400">Gate</span></div>
+                    style="touch-action: pan-y;" onclick="sim.addComponent('XNOR')"><span
+                        class="font-bold text-lg">XNOR</span><span class="text-xs text-gray-400">Gate</span></div>
             </div>
 
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 mt-2">Memory &amp; State</div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('D_FF')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('D_FF')">
                     <div class="w-8 h-8 border-2 border-gray-400 rounded flex items-center justify-center"><span
                             class="text-[10px] font-bold">D</span></div><span class="text-xs">D-FF</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('D_FF_R')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('D_FF_R')">
                     <div class="w-8 h-8 border-2 border-gray-400 rounded flex items-center justify-center"><span
                             class="text-[10px] font-bold">D</span></div><span class="text-xs">D-FF(R)</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('T_FF')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('T_FF')">
                     <div class="w-8 h-8 border-2 border-gray-400 rounded flex items-center justify-center"><span
                             class="text-[10px] font-bold">T</span></div><span class="text-xs">T-FF</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('JK_FF')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('JK_FF')">
                     <div class="w-8 h-8 border-2 border-gray-400 rounded flex items-center justify-center"><span
                             class="text-[10px] font-bold">JK</span></div><span class="text-xs">JK</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('SR_FF')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('SR_FF')">
                     <div class="w-8 h-8 border-2 border-gray-400 rounded flex items-center justify-center"><span
                             class="text-[10px] font-bold">SR</span></div><span class="text-xs">SR</span>
                 </div>
@@ -574,43 +607,45 @@
             </div>
             <div class="grid grid-cols-3 gap-2">
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('LIGHT')"><svg class="svg-inline--fa fa-lightbulb text-yellow-200 text-xl"
-                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('LIGHT')"><svg
+                        class="svg-inline--fa fa-lightbulb text-yellow-200 text-xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512" data-fa-i2svg="">
                         <path fill="currentColor"
                             d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z">
                         </path>
                     </svg><span class="text-xs">Light</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('LED')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('LED')">
                     <div class="relative w-6 h-6 flex items-center justify-center">
                         <div class="w-4 h-4 rounded-full bg-red-500 border border-red-700"></div>
                     </div><span class="text-xs">LED</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('HEX_DISPLAY')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('HEX_DISPLAY')">
                     <div class="bg-black text-red-500 font-mono font-bold px-2 rounded border border-gray-600">8</div>
                     <span class="text-xs">Hex</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('BAR_GRAPH')"><svg class="svg-inline--fa fa-bars text-red-400 text-xl"
-                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('BAR_GRAPH')"><svg
+                        class="svg-inline--fa fa-bars text-red-400 text-xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
                         <path fill="currentColor"
                             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
                         </path>
                     </svg><span class="text-xs">Graph</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('SCOPE')"><svg
+                    style="touch-action: pan-y;" onclick="sim.addComponent('SCOPE')"><svg
                         class="svg-inline--fa fa-wave-square text-green-400 text-xl" aria-hidden="true"
                         focusable="false" data-prefix="fas" data-icon="wave-square" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                         <path fill="currentColor"
                             d="M128 64c0-17.7 14.3-32 32-32H320c17.7 0 32 14.3 32 32V416h96V256c0-17.7 14.3-32 32-32H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H512V448c0 17.7-14.3 32-32 32H320c-17.7 0-32-14.3-32-32V96H192V256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V64z">
                         </path>
                     </svg><span class="text-xs">Scope</span></div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex flex-col items-center gap-2"
-                    onclick="sim.addComponent('ANALYZER')"><svg
+                    style="touch-action: pan-y;" onclick="sim.addComponent('ANALYZER')"><svg
                         class="svg-inline--fa fa-chart-bar text-cyan-400 text-xl" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="chart-bar" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512" data-fa-i2svg="">
@@ -623,20 +658,20 @@
             <div class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Tools</div>
             <div class="grid grid-cols-2 gap-2">
                 <div class="component-btn bg-blue-900/30 border border-blue-800 p-2 rounded flex items-center gap-3 px-4"
-                    onclick="sim.openTruthTable()">
+                    style="touch-action: pan-y;" onclick="sim.openTruthTable()">
                     <svg class="svg-inline--fa fa-table text-blue-400 text-xl" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="table" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512" data-fa-i2svg="">
+                        viewBox="0 0 512 512">
                         <path fill="currentColor"
                             d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z">
                         </path>
                     </svg><span class="text-sm font-bold text-blue-100">Table</span>
                 </div>
                 <div class="component-btn bg-gray-700 p-2 rounded flex items-center gap-3 px-4"
-                    onclick="sim.addComponent('TEXT')">
+                    style="touch-action: pan-y;" onclick="sim.addComponent('TEXT')">
                     <svg class="svg-inline--fa fa-font text-gray-300 text-xl" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="font" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512" data-fa-i2svg="">
+                        viewBox="0 0 448 512">
                         <path fill="currentColor"
                             d="M254 52.8C249.3 40.3 237.3 32 224 32s-25.3 8.3-30 20.8L57.8 416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32h-1.8l18-48H303.8l18 48H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H390.2L254 52.8zM279.8 304H168.2L224 155.1 279.8 304z">
                         </path>
@@ -651,7 +686,7 @@
     </div>
 
     <script src="ui1.js"></script>
-    <script src="main1.js"></script>
+    <script src="main2.js"></script>
 
 
 </body>
