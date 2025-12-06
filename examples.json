@@ -1,5 +1,10 @@
 [
     {
+        "title": "OR gate",
+        "description": "OR gate with display",
+        "link": "#Examples/OR"
+    },
+    {
         "title": "Counter example",
         "description": "Counter circuit with logic Analyzer.",
         "link": "#Examples/counter"
